@@ -1,0 +1,18 @@
+.box-sizing {
+    padding: 2rem 8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    padding: 2rem 8rem;
+}
+
+.e-com-icon {
+    width: 24px;
+    height: 24px;
+}
+
+a:hover {
+  cursor: pointer;
+}
