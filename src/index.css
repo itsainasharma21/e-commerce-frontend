@@ -146,3 +146,22 @@ section,
   font-size: 0.75rem;
 
 }
+
+#admin-main {
+  margin-top: 60px;
+  padding: 20px 30px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 1199px) {
+  #admin-main {
+    padding: 20px;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  #admin-main {
+    margin-left: 300px;
+  }
+}

@@ -1,25 +1,20 @@
 import { useState } from "react";
 import "../styles/Login.css";
 import { Link, useNavigate } from "react-router-dom";
+import { useAdmin } from "../context/useAdmin";
 
 const Login = () => {
   const navigate = useNavigate();
   const [formType, setFormType] = useState("login");
+  const { loginAsAdmin } = useAdmin();
 
   const handleSubmit = async () => {
-    const response = await fetch("http://localhost:5000/api/auth/login", {
-      method: "POST",
-      headers: {
-        Accept: "application/json",
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: "naina.sharma@imsnoida.com",
-        password: "123456",
-      }),
-    });
-    const content = await response.json();
-    console.log(content);
+    const data = {
+      email: "naina.sharma@imsnoida.com",
+      password: "123456",
+      isAdmin: true,
+    };
+    if (data.isAdmin == true) loginAsAdmin();
   };
 
   const navigateURL = () => {

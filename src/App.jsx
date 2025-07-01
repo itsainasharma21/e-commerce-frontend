@@ -11,8 +11,14 @@ import Cart from "./components/Cart";
 import Dashboard from "./components/Dashboard";
 import { Toaster } from "react-hot-toast";
 import Checkout from "./components/Checkout";
+import AdminRoute from "./routes/AdminRoute";
+import { useEffect } from "react";
+import { useAdmin } from "./context/useAdmin";
 
 function App() {
+  const { isAdmin } = useAdmin();
+
+  useEffect(() => {}, [isAdmin]);
   return (
     <>
       <Toaster
@@ -36,10 +42,19 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/cart" element={<Cart />} />
           <Route path="/checkout" element={<Checkout />} />
-          <Route path="/admin/dashboard" element={<Dashboard />} />
+          <Route
+            path="/admin/dashboard"
+            element={
+              <AdminRoute>
+                <main id="admin-main" className="admin-main">
+                  <Dashboard />
+                </main>
+              </AdminRoute>
+            }
+          />
         </Routes>
       </main>
-      <Footer />
+      {isAdmin == true ? "" : <Footer />}
     </>
   );
 }
