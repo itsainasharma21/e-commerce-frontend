@@ -13,9 +13,7 @@ const Footer = () => {
                   <span className="sitename">E-Comm Store</span>
                 </Link>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Nullam in nibh vehicula, facilisis magna ut, consectetur
-                  lorem.
+                  “Your one-stop online store for fashion, gadgets, and everyday essentials — shop smart, shop easy!”
                 </p>
                 <div className="footer-contact mt-4">
                   <div className="contact-item">

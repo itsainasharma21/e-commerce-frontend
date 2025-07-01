@@ -29,25 +29,15 @@ const About = () => {
           <div className="row">
             <div className="col-lg-6">
               <h2 className="about-title">
-                Nemo enim ipsam voluptatem quia voluptas aspernatur
+                "Where Shopping Meets Happiness"
               </h2>
               <p className="about-description">
-                Temporibus autem quibusdam et aut officiis debitis aut rerum
-                necessitatibus saepe eveniet ut et voluptates repudiandae sint
-                et molestiae non recusandae.
+                “Welcome to E-Comm Store — your ultimate online shopping destination for fashion, electronics, home essentials, and more. We aim to deliver quality products at unbeatable prices with fast delivery, secure payments, and 24/7 customer support. Shop hassle-free and enjoy an exceptional online shopping experience.”
               </p>
             </div>
             <div className="col-lg-6">
               <p className="about-text">
-                Itaque earum rerum hic tenetur a sapiente delectus, ut aut
-                reiciendis voluptatibus maiores alias consequatur aut
-                perferendis doloribus asperiores repellat.
-              </p>
-              <p className="about-text">
-                Amet eos ut. Officiis soluta ab id dolor non sint. Corporis
-                omnis consequatur quisquam ex consequuntur quo omnis. Quo
-                eligendi cum. Amet mollitia qui quidem dolores praesentium quasi
-                ut et.
+          
               </p>
             </div>
           </div>
@@ -63,12 +53,11 @@ const About = () => {
                 </div>
                 <h3>
                   <a href="#" className="stretched-link">
-                    At vero eos
+                    How It Works
                   </a>
                 </h3>
                 <p>
-                  Nam libero tempore, cum soluta nobis est eligendi optio cumque
-                  nihil impedit quo minus id quod maxime placeat.
+                  “Browse, add to cart, checkout securely, and get your order delivered right to your doorstep — it’s that simple!”
                 </p>
               </div>
             </div>
@@ -83,12 +72,11 @@ const About = () => {
                 </div>
                 <h3>
                   <a href="#" className="stretched-link">
-                    Sed ut perspiciatis
+                    User Management
                   </a>
                 </h3>
                 <p>
-                  At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                  blanditiis praesentium voluptatum deleniti atque.
+                  “Easily manage user profiles, order history, addresses, and preferences for a personalized shopping experience.”
                 </p>
               </div>
             </div>
@@ -103,12 +91,11 @@ const About = () => {
                 </div>
                 <h3>
                   <a href="#" className="stretched-link">
-                    Nemo enim ipsam
+                    Report Management
                   </a>
                 </h3>
                 <p>
-                  Neque porro quisquam est, qui dolorem ipsum quia dolor sit
-                  amet, consectetur, adipisci velit, sed quia non numquam.
+                  “Track sales, orders, revenue, and customer insights with real-time report management for smarter business decisions.”
                 </p>
               </div>
             </div>

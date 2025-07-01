@@ -26,9 +26,8 @@ const Home = () => {
                   Discover Stylish <span>Fashion</span> For Every Season
                 </h1>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-                  elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus
-                  leo. Vestibulum ante ipsum primis in faucibus.
+                  "Step into a world of endless choices! Our E-commerce store brings you trendy fashion, must-have gadgets, and everyday essentials — all at your fingertips. Discover, shop, and smile… because great deals are just a click away!"
+
                 </p>
                 <div className="hero-cta">
                   <a href="#" className="btn btn-shop">
@@ -125,8 +124,7 @@ const Home = () => {
                 </div>
                 <h3>Free Shipping</h3>
                 <p>
-                  Nulla sit morbi vestibulum eros duis amet, consectetur vitae
-                  lacus. Ut quis tempor felis sed nunc viverra.
+                  “Enjoy free shipping on all orders — shop more, save more, delivered to your doorstep!”
                 </p>
               </div>
             </div>
@@ -141,8 +139,7 @@ const Home = () => {
                 </div>
                 <h3>Money Back Guarantee</h3>
                 <p>
-                  Nullam gravida felis ac nunc tincidunt, sed malesuada justo
-                  pulvinar. Vestibulum nec diam vitae eros.
+                  “Shop with confidence — we offer a 100% money-back guarantee if you’re not satisfied!”
                 </p>
               </div>
             </div>
@@ -157,8 +154,7 @@ const Home = () => {
                 </div>
                 <h3>Discount Offers</h3>
                 <p>
-                  Nulla ipsum nisi vel adipiscing amet, dignissim consectetur
-                  ornare. Vestibulum quis posuere elit auctor.
+                  “Grab exciting discount offers and save big on your favorite products — limited time only!”
                 </p>
               </div>
             </div>
@@ -173,8 +169,7 @@ const Home = () => {
                 </div>
                 <h3>24/7 Support</h3>
                 <p>
-                  Ipsum dolor amet sit consectetur adipiscing, nullam vitae
-                  euismod tempor nunc felis vestibulum ornare.
+                  “We’re here for you 24/7 — anytime, anywhere, with instant support for all your needs!”
                 </p>
               </div>
             </div>
@@ -188,8 +183,7 @@ const Home = () => {
         >
           <h2>Best Sellers</h2>
           <p>
-            Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-            consectetur velit
+            “Discover our best-selling products loved by thousands — trending, trusted, and top-rated!”
           </p>
         </div>
         <div
@@ -223,19 +217,18 @@ const Home = () => {
                       {(data?.new == true || data?.sale == true) && (
                         <div className="product-tags">
                           <span
-                            className={`badge ${
-                              data?.new == true
-                                ? "bg-accent"
-                                : data?.sale == true
+                            className={`badge ${data?.new == true
+                              ? "bg-accent"
+                              : data?.sale == true
                                 ? "bg-sale"
                                 : ""
-                            }`}
+                              }`}
                           >
                             {data?.new == true
                               ? "New"
                               : data?.sale == true
-                              ? "Sale"
-                              : ""}
+                                ? "Sale"
+                                : ""}
                           </span>
                         </div>
                       )}
@@ -278,7 +271,7 @@ const Home = () => {
                           ({data?.rating.count})
                         </span>
                       </div>
-                      <button className="btn btn-add-to-cart" onClick={() => {addToCart(data); notify('Item added to cart!')}}>
+                      <button className="btn btn-add-to-cart" onClick={() => { addToCart(data); notify('Item added to cart!') }}>
                         <i className="bi bi-bag-plus me-2" />
                         Add to Cart
                       </button>
